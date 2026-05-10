@@ -1,0 +1,140 @@
+.about-hero {
+  padding-top: 12rem;
+  padding-bottom: 4rem;
+}
+
+.mv-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+}
+
+.mv-card {
+  padding: 3rem;
+  transition: var(--transition);
+}
+
+.mv-card:hover {
+  transform: translateY(-5px);
+}
+
+.mb-1 {
+  margin-bottom: 1rem;
+}
+
+.bg-alt {
+  background: rgba(15, 82, 186, 0.03);
+}
+
+.transparency-content {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 4rem;
+  padding: 4rem;
+  align-items: center;
+}
+
+.feature-list {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.feature-item {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+}
+
+.icon-wrapper {
+  background: rgba(15, 82, 186, 0.1);
+  color: var(--primary-blue);
+  padding: 1rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tech-circle {
+  width: 300px;
+  height: 300px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.inner-circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, var(--primary-blue), var(--primary-green));
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  font-size: 1.5rem;
+  z-index: 10;
+  box-shadow: 0 0 30px rgba(15, 82, 186, 0.5);
+}
+
+.orbit {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px dashed var(--primary-blue);
+  border-radius: 50%;
+  opacity: 0.3;
+  animation: spin linear infinite;
+}
+
+.orbit-1 { width: 150px; height: 150px; animation-duration: 10s; }
+.orbit-2 { width: 220px; height: 220px; animation-duration: 15s; animation-direction: reverse; }
+.orbit-3 { width: 300px; height: 300px; animation-duration: 20s; }
+
+@keyframes spin {
+  100% { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.team-card {
+  padding: 2rem;
+  text-align: center;
+}
+
+.member-photo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin: 0 auto 1.5rem;
+  background: linear-gradient(135deg, rgba(15,82,186,0.2), rgba(46,139,87,0.2));
+}
+
+.role {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 992px) {
+  .mv-grid, .transparency-content {
+    grid-template-columns: 1fr;
+  }
+  
+  .transparency-visual {
+    margin-top: 3rem;
+  }
+}

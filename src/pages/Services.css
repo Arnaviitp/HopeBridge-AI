@@ -1,0 +1,74 @@
+.services-hero {
+  padding-top: 12rem;
+  padding-bottom: 4rem;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+}
+
+.service-card {
+  padding: 3rem 2rem;
+  position: relative;
+  overflow: hidden;
+  transition: var(--transition);
+  border-top: 3px solid transparent;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  border-top-color: var(--primary-blue);
+  box-shadow: 0 15px 35px rgba(15, 82, 186, 0.1);
+}
+
+.service-icon {
+  margin-bottom: 1.5rem;
+  display: inline-block;
+}
+
+.service-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.service-card p {
+  color: var(--text-gray);
+  font-size: 0.95rem;
+  position: relative;
+  z-index: 2;
+}
+
+.card-hover-effect {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 150px;
+  height: 150px;
+  background: radial-gradient(circle, rgba(15, 82, 186, 0.05) 0%, rgba(255,255,255,0) 70%);
+  border-radius: 50%;
+  transform: translate(50%, -50%);
+  transition: var(--transition);
+  z-index: 1;
+}
+
+.service-card:hover .card-hover-effect {
+  transform: translate(30%, -30%) scale(1.5);
+  background: radial-gradient(circle, rgba(15, 82, 186, 0.1) 0%, rgba(255,255,255,0) 70%);
+}
+
+.tech-badges {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 3rem;
+}
+
+.badge {
+  padding: 0.8rem 1.5rem;
+  border-radius: 50px;
+  font-weight: 500;
+  color: var(--primary-blue);
+}

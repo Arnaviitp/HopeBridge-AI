@@ -1,0 +1,126 @@
+.footer {
+  background-color: var(--card-bg);
+  border-top: 1px solid var(--glass-border);
+  padding-top: 4rem;
+  margin-top: 4rem;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 3rem;
+  margin-bottom: 3rem;
+}
+
+.footer-col h3 {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  color: var(--text-dark);
+}
+
+.footer-desc {
+  color: var(--text-gray);
+  margin: 1rem 0 1.5rem;
+}
+
+.social-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.social-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--bg-color);
+  color: var(--text-gray);
+  transition: var(--transition);
+}
+
+.social-links a:hover {
+  background: var(--primary-blue);
+  color: white;
+  transform: translateY(-3px);
+}
+
+.footer-col ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.footer-col ul li a {
+  color: var(--text-gray);
+  transition: var(--transition);
+}
+
+.footer-col ul li a:hover {
+  color: var(--primary-blue);
+  padding-left: 5px;
+}
+
+.contact-info li {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  color: var(--text-gray);
+}
+
+.contact-info li svg {
+  color: var(--primary-blue);
+  flex-shrink: 0;
+}
+
+.newsletter-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.newsletter-form input {
+  padding: 0.8rem 1rem;
+  border-radius: 8px;
+  border: 1px solid var(--glass-border);
+  background: var(--bg-color);
+  color: var(--text-dark);
+  outline: none;
+  font-family: var(--font-body);
+}
+
+.newsletter-form input:focus {
+  border-color: var(--primary-blue);
+}
+
+.footer-bottom {
+  border-top: 1px solid var(--glass-border);
+  padding: 1.5rem 0;
+}
+
+.bottom-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--text-gray);
+  font-size: 0.9rem;
+}
+
+.bottom-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.bottom-links a:hover {
+  color: var(--primary-blue);
+}
+
+@media (max-width: 768px) {
+  .bottom-container {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+}
